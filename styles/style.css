@@ -134,9 +134,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 .footer-info {
     text-align: center;
 }
+
 .footer-icons i {
     font-size: 32px;
     margin: 5px;
@@ -191,5 +193,41 @@ footer {
 
     footer {
         height: 300px;
+    }
+}
+
+/* For Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        background-position: top;
+    }
+
+    .banner-info {
+        width: 100%;
+    }
+
+    .client-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row-1,
+    .row-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .poster {
+        width: 100%;
     }
 }
