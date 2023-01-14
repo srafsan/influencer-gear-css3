@@ -87,7 +87,7 @@ main {
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.collection P {
+.collection p {
     color: #787885;
     font-size: 14px;
     font-weight: 700;
@@ -139,4 +139,36 @@ footer {
 .footer-icons i {
     font-size: 32px;
     margin: 5px;
+}
+
+/*  -----------------
+    FOR SMALL DEVICES
+    ----------------- */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0%;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        background-position: top;
+    }
+    .banner-info {
+        margin-top: 20px;
+    }
+    .client-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .poster {
+        flex-direction: column-reverse;
+    }
 }
