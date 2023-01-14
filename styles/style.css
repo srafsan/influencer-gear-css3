@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    padding: 125px 40px;
+    background-color: pink;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #e02c6d;
+    padding: 10px 24px;
+    width: 155px;
+    height: 44px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.btn-r40 {
+    border-radius: 40px;
+}
+
+/*  ------------
+    Main section 
+    ------------ */
+
+/* Client logo styles */
+.client-logo {
+    display: flex;
+    gap: 60px;
+    margin: 30px 60px;
+}
+
+.banner {
+    display: flex;
+}
+.banner-info {
+    width: 50%;
+}
+
+/* POPULAR COLLECTIONS STYLES */
+.popular-collections {
+    margin-top: 100px;
+}
+.popular-collections h1 {
+    text-align: center;
+}
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.collection {
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.collection P {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+.collection-name {
+    font-size: 28px;
+    font-weight: 500;
+    /* margin-bottom: 6px; */
+}
+.collection-price {
+    margin: 6px 0px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.collection-rating {
+    margin-bottom: 5px;
+}
+.collection-rating i {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+}
+
+/* POSTER STYLES */
+.poster {
+    width: 53%;
+    margin: 100px 0;
+    display: flex;
+    gap: 100px;
+}
+
+/* --------------
+    Footer styles
+    ------------ */
+
+footer {
+    background-color: #0a0826;
+    color: #ffffff;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info {
+    text-align: center;
+}
+.footer-icons i {
+    font-size: 32px;
+    margin: 5px;
+}
