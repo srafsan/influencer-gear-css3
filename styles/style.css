@@ -5,8 +5,8 @@
 }
 
 header {
-    padding: 125px 40px;
-    background-color: pink;
+    padding: 90px 200px;
+    background: #ffffff;
 }
 
 main {
@@ -19,7 +19,6 @@ main {
 .btn-primary {
     background-color: #e02c6d;
     padding: 10px 24px;
-    width: 155px;
     height: 44px;
     border: none;
     font-size: 16px;
@@ -44,9 +43,31 @@ main {
 
 .banner {
     display: flex;
+    justify-content: center;
+    gap: 5%;
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: 88%;
 }
+
+/* .banner div {
+    border: 2px solid black;
+} */
+
 .banner-info {
     width: 50%;
+}
+
+.banner-info h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-info p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
 /* POPULAR COLLECTIONS STYLES */
