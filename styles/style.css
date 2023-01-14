@@ -37,22 +37,24 @@ main {
 /* Client logo styles */
 .client-logo {
     display: flex;
-    gap: 60px;
     margin: 30px 60px;
+}
+
+.client-logo div img {
+    margin-right: 2em;
 }
 
 .banner {
     display: flex;
     justify-content: center;
     gap: 5%;
-    background-image: url("../images/Circle\ design.svg");
-    background-repeat: no-repeat;
-    background-position: 88%;
 }
 
-/* .banner div {
-    border: 2px solid black;
-} */
+.banner-img {
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .banner-info {
     width: 50%;
@@ -96,7 +98,6 @@ main {
 .collection-name {
     font-size: 28px;
     font-weight: 500;
-    /* margin-bottom: 6px; */
 }
 .collection-price {
     margin: 6px 0px;
@@ -155,13 +156,28 @@ footer {
         text-align: center;
         background-position: top;
     }
+
     .banner-info {
         margin-top: 20px;
+        width: 100%;
     }
+
+    .popular-collections {
+        margin-top: 50px;
+    }
+
     .client-logo {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row-1,
+    .row-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     .collections {
@@ -170,5 +186,10 @@ footer {
 
     .poster {
         flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer {
+        height: 300px;
     }
 }
